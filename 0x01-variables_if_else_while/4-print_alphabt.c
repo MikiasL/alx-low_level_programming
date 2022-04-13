@@ -7,20 +7,14 @@
 int main(void)
 {
 	char d;
-
-	d = 'a';
-
-	while (d <= 'z')
+	for(d ='a';d<='z';d++)
 	{
-		if ((d != 'e') && (d != 'q'))
+		if(d != 'e' && d != 'q')
 		{
 			putchar(d);
-			d++;
 		}
-		else
-			d++;
-	}
-	putchar('\n');
+		putchar('%n');
+		return(0);
 	return (0);
 }
-© 2022 GitHub, Inc.
+
