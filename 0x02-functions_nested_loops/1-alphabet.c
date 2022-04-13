@@ -1,51 +1,17 @@
 #include "main.h"
 
-
-
 /**
-
- * print_alphabet_x10 - This function prints out 10 times the letters
-
- *
-
- * return:  void
-
+ * print_alphabet - Prints the letters of the alphabets in small letters
+ * Return: 0 success
  */
 
-void print_alphabet_x10(void)
-  
+void print_alphabet(void)
 {
-  
-  char c;
-  
-  int d;
-  
+	char c;
 
-  
-  d = 0;
-  
-
-  
-  while (d < 10)
-    
-    {
-      
-      c = 'a';
-      
-      while (c <= 'z')
-	
+	for (c = 'a'; c <= 'z'; c++)
 	{
-	  
-	  _putchar(c);
-	  
-	  c++;
-	  
+		_putchar(c);
 	}
-      
-      _putchar('\n');
-      
-      d++;
-      
-    }
-  
+	_putchar('\n');
 }
